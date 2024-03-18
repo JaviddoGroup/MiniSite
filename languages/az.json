@@ -5,13 +5,7 @@
     "headline-tex": "BÜTÜN NÖV MAŞINLAR ÜÇÜN BÜTÜN AVTOMOBİL HİSSƏLƏRİ",
     "headline-sub-tex": "BÜTÜN MARKALAR VƏ BÜTÜN MODELLƏR",
     "first-footer": "Aşağıya fırladın səhifələr məhsullarımızın kataloquna Baxmaq üçün",
-    "select-your-catalog": "KATALOQ SEÇİN",
-    "catalog-brake": "ƏYLƏC SİSTEMİ",
-    "catalog-elektrik": "ELEKTRİK",
-    "catalog-liquids": "MAYƏLƏR",
-    "catalog-interior": "İNTERYER",
-    "catalog-exterior": "EKSTERYER",
-    "catalog-accessories": "AKSESUARLAR",
+    "select-your-catalog": "SƏHİFƏ SEÇİN",
     "choose-you-lang": "DİL SEÇİN",
     "name-catalog-brake": "ƏYLƏC SİSTEMİ KATALOQU",
     "name-catalog-electrik": "ELEKTRİK SİSTEMİ KATALOQU",
@@ -24,5 +18,8 @@
     "onload-loading-images": "şəkillər",
     "onload-loading-codes": "kodlar",
     "onload-loading-catalogs": "kataloqlar",
-    "onload-loading-page": "səhifələr"
+    "onload-loading-page": "səhifələr",
+    "page-production": "Istehsal",
+    "page-certificates": "Sertifikatlar",
+    "page-faq": "FAQ"
 }

@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-document.addEventListener('copy', function (event) {
-    event.preventDefault(); // Отмена действия копирования
-    alert('Копирование запрещено');
-});
+// document.addEventListener('copy', function (event) {
+//     event.preventDefault(); // Отмена действия копирования
+//     alert('Копирование запрещено');
+// });
 
 
 
@@ -76,37 +76,37 @@ document.addEventListener('copy', function (event) {
 
 
 
-document.addEventListener('contextmenu', function (event) {
-    event.preventDefault();
-});
+// document.addEventListener('contextmenu', function (event) {
+//     event.preventDefault();
+// });
 
-document.addEventListener('keydown', function (event) {
-    // Блокируем F12
-    if (event.key === 'F12') {
-        event.preventDefault();
-    }
+// document.addEventListener('keydown', function (event) {
+//     // Блокируем F12
+//     if (event.key === 'F12') {
+//         event.preventDefault();
+//     }
 
-    // Блокируем Ctrl + Shift + C
-    if (event.ctrlKey && event.shiftKey && event.keyCode === 67) {
-        event.preventDefault();
-    }
+//     // Блокируем Ctrl + Shift + C
+//     if (event.ctrlKey && event.shiftKey && event.keyCode === 67) {
+//         event.preventDefault();
+//     }
 
-    // Блокируем Ctrl + Shift + U
-    if (event.ctrlKey && event.shiftKey && event.keyCode === 85) {
-        event.preventDefault();
-    }
+//     // Блокируем Ctrl + Shift + U
+//     if (event.ctrlKey && event.shiftKey && event.keyCode === 85) {
+//         event.preventDefault();
+//     }
 
-    // Блокируем Ctrl + Shift + I, если нажата дополнительная клавиша, кроме "Alt"
-    if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
-        return;
-    }
+//     // Блокируем Ctrl + Shift + I, если нажата дополнительная клавиша, кроме "Alt"
+//     if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+//         return;
+//     }
 
-    // Разрешаем другие комбинации клавиш
-    // Например, Ctrl + R или Ctrl + Shift + R
-    if (event.ctrlKey && (event.key === 'R' || event.keyCode === 82)) {
-        return; // Не блокируем Ctrl + R или Ctrl + Shift + R
-    }
-});
+//     // Разрешаем другие комбинации клавиш
+//     // Например, Ctrl + R или Ctrl + Shift + R
+//     if (event.ctrlKey && (event.key === 'R' || event.keyCode === 82)) {
+//         return; // Не блокируем Ctrl + R или Ctrl + Shift + R
+//     }
+// });
 
 
 
