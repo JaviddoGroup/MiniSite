@@ -16,19 +16,43 @@
 
     .swiper-container {
         width: 100%;
-        height: 100%;
     }
 
-    .swiper-slide {
-        background-size: cover;
-        background-position: center;
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 32px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: block !important;
     }
 
     .swiper-slide-shadow-coverflow {
-        width: 83.3% !important;
-        height: 90.1% !important;
+        width: 0 !important;
+        height: 0 !important;
     }
 
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
 
     /* --------------------------------------------- */
     .contact-us-link-mobile {
