@@ -68,17 +68,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
-
-
-
-window.addEventListener('keydown', function (event) {
-    if (event.keyCode === 123) { // F12
-        console.log('Консоль открыта');
-        // Здесь можно предпринять дополнительные действия
-    }
-});

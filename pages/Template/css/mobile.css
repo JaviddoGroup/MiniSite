@@ -1,4 +1,71 @@
 @media screen and (max-width: 2560px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
+
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 60%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 28px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 60%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     .contact-us-link-mobile {
         display: none;
     }
@@ -9,7 +76,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 55%;
+        height: 50%;
     }
 
     .laguage-section {
@@ -164,7 +231,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 650px;
         display: block;
     }
@@ -255,14 +322,80 @@
 
 
 @media screen and (max-width: 2000px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 60%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 20px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 60%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 60%;
+        height: 50%;
     }
 
     .laguage-section {
@@ -419,7 +552,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 450px;
     }
 
@@ -506,14 +639,80 @@
 
 
 @media screen and (max-width: 1800px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 20px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 60%;
+        height: 50%;
     }
 
     .laguage-section {
@@ -669,7 +868,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 450px;
     }
 
@@ -754,14 +953,80 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 20px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 60%;
+        height: 50%;
     }
 
     .laguage-section {
@@ -921,7 +1186,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 450px;
     }
 
@@ -1006,14 +1271,80 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 20px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 60%;
+        height: 50%;
     }
 
     .laguage-section {
@@ -1174,7 +1505,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 450px;
     }
 
@@ -1259,14 +1590,81 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 16px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 45%;
+        height: 40%;
     }
 
     .laguage-section {
@@ -1426,7 +1824,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 450px;
     }
 
@@ -1511,14 +1909,81 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 16px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -1678,7 +2143,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 350px;
     }
 
@@ -1763,14 +2228,81 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 16px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -1933,7 +2465,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 350px;
     }
 
@@ -2018,14 +2550,81 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 90%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 35%;
+        height: 25%;
     }
 
     .laguage-section {
@@ -2189,7 +2788,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 250px;
     }
 
@@ -2274,14 +2873,81 @@
 }
 
 @media screen and (max-width: 800px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+    }
 
+    .slyder-pictures {
+        width: 50%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 100%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -2482,7 +3148,7 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
+        z-index: 100;
         top: 250px;
     }
 
@@ -2568,14 +3234,83 @@
 }
 
 @media screen and (max-width: 600px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+        margin-top: 10%;
+    }
 
+    .slyder-pictures {
+        width: 95%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 100%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -2787,8 +3522,8 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
-        top: 320px;
+        z-index: 100;
+        top: 415px;
     }
 
     .menu-icon {
@@ -2872,14 +3607,83 @@
 }
 
 @media screen and (max-width: 500px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+        margin-top: 10%;
+    }
 
+    .slyder-pictures {
+        width: 95%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 26px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 100%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -3090,8 +3894,8 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
-        top: 450px;
+        z-index: 100;
+        top: 350px;
     }
 
     .menu-icon {
@@ -3175,14 +3979,83 @@
 }
 
 @media screen and (max-width: 400px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+        margin-top: 10%;
+    }
 
+    .slyder-pictures {
+        width: 95%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 22px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 100%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -3393,8 +4266,8 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
-        top: 350px;
+        z-index: 100;
+        top: 315px;
     }
 
     .menu-icon {
@@ -3478,14 +4351,83 @@
 }
 
 @media screen and (max-width: 360px) {
+    .slider-center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        height: 500px;
+        margin-top: 10%;
+    }
 
+    .slyder-pictures {
+        width: 95%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .slider-image {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .branch-info h1 {
+        text-align: center;
+        color: #EEE;
+        font-size: 20px;
+    }
+
+    .branch-info p {
+        text-align: justify;
+        color: #EEE;
+        font-size: 15px;
+    }
+
+    .branch-info {
+        display: none;
+    }
+
+    .swiper-slide-active .branch-info {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .brach-info-move {
+        width: 100%;
+    }
+
+
+    .swiper-slide-shadow-coverflow {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: -25% !important;
+    }
+
+    .swiper-button-next {
+        right: -25% !important;
+    }
+
+    /* ----------------------------------------- */
     /* Language selection */
     /* radio settings 👇 */
     .move-language {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 30%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -3700,8 +4642,8 @@
     /* Burger Menu ----------------------------------------------------------- */
     .menus-front {
         position: sticky;
-        z-index: 2;
-        top: 350px;
+        z-index: 100;
+        top: 295px;
     }
 
     .menu-icon {
