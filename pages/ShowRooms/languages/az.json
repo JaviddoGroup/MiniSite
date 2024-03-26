@@ -1,6 +1,6 @@
 {
-    "header-left": "Avtomobil hissələri sahəsində aparıcı şirkət",
-    "header-center": "AVTOMOBİL HİSSƏLƏRİ SİFARİŞ EDİN",
+    "header-left": "ETIBARLI AVTOMOBIL HISSƏLƏRI MARKASI.",
+    "header-center": "EHTIYAT HISSƏLƏRI SİFARİŞ EDİN",
     "header-right": "İŞ GÜNLƏRİ 09:00-DAN 19:00-DƏK İŞLƏYİRİK",
     "headline-tex": "BÜTÜN NÖV MAŞINLAR ÜÇÜN BÜTÜN AVTOMOBİL HİSSƏLƏRİ",
     "headline-sub-tex": "BÜTÜN MARKALAR VƏ BÜTÜN MODELLƏR",
@@ -22,5 +22,10 @@
     "page-production": "Istehsal",
     "page-certificates": "Sertifikatlar",
     "page-faq": "FAQ",
-    "page-showrooms": "Sərgi Salonları"
+    "page-showrooms": "Sərgi Salonları",
+    "page-home": "Ana Səhifə",
+    "branch-in-china-title": "ÇIN BAŞ OFISI",
+    "branch-in-china-description": "Javiddo Group-un baş ofisi Yivu şəhərində yerləşir. Beynəlxalq ticarət və kommersial əməliyyatlarının döyünən ürəyi sayılan şəhərdə idarəetmə, tədqiqat və istehsal fəaliyyətlərimiz həyata keçirilir. Çindəki üstün logistika imkanlarımız həm e-ticarəti, həm də qlobal miqyasda həyata keçirilən digər ticarət növlərini emal edir.",
+    "branch-in-azerbaijan-title": "AZƏRBAYCAN FILIALI",
+    "branch-in-azerbaijan-description": "Azərbaycandakı rəsmi nümayəndəliyimiz “Javiddo Group” brendlərinin marketinq məsələləri üçün kreativ həlləri nəzərdən keçirir, reallaşdırır və ölkədaxili korporativ satış prosedurlarını həyata keçirir. Eyni zamanda, bu nümayəndəlik MDB və digər yaxın ölkələrlə əməkdaşlıq zamanı böyük üstünlük yaradır."
 }

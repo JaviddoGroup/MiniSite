@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Production</title>
+    <title>Branchs</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
-    <script href="./js/script.js"></script>
 
 
 
@@ -25,13 +25,13 @@
                 <div class="header-left-img"><img src="./media/icon/logo.svg" alt="logo"></div>
             </a>
             <div>
-                <p data-keyword="header-left">A leading company in the field of auto parts</p>
+                <p data-keyword="header-left">TRUSTED AUTO PART BRAND.</p>
             </div>
         </div>
         <a class="contact-us-link" href="https://www.javiddo.com/contact" target="_blank">
             <div class="header-center">
                 <div>
-                    <p data-keyword="header-center">ORDER AUTO PARTS</p>
+                    <p data-keyword="header-center">ORDER SPARE PARTS</p>
                 </div>
                 <div><img src="./media/icon/go-to-link.svg" alt=""></div>
             </div>
@@ -58,10 +58,11 @@
             </div>
             <div class="menus">
                 <p class="keyword-link" data-keyword="select-your-catalog">SELECT A PAGE</p>
-                <a href="../../index.html" data-keyword="page-production">Home</a>
-                <a href="" data-keyword="page-certificates">Certificates</a>
-                <a href="" data-keyword="page-faq">FAQ</a>
-                <a href="" data-keyword=""></a>
+                <a href="../../index.html" data-keyword="page-home">Home Page</a>
+                <a href="../ShowRooms/showrooms.html" data-keyword="page-showrooms">Show Rooms</a>
+                <a href="../Production/productions.html" data-keyword="page-production">Productions</a>
+                <a href="../Certificates/certificates.html" data-keyword="page-certificates">Certificate</a>
+                <a href="../FAQ/faq.html" data-keyword="page-faq">FAQ</a>
                 <a href="" data-keyword=""></a>
                 <a href="" data-keyword=""></a>
                 <div class="move-language">
@@ -91,6 +92,60 @@
 
     </div>
 
+    <div class="slider-center">
+        <div class="slyder-pictures">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="./media/img/branch1.png" alt="Slide 1">
+                        </div>
+                        <div class="branch-info">
+                            <div class="brach-info-move">
+                                <h1 data-keyword="branch-in-china-title">CHINESE HEADQUARTERS</h1>
+                                <p data-keyword="branch-in-china-description"> Javiddo Group is headquartered in Yiwu.
+                                    Our administrative, research, and production activities are carried out in the city,
+                                    which is considered the beating heart of international trade and commercial
+                                    operations. Our superior logistics capabilities in China process both e-commerce and
+                                    other trade variations realized on a global scale.<a data-keyword=""
+                                        class="go-to-link-branch" href="./">Подробнее</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="./media/img/branch2.png" alt="Slide 2">
+                        </div>
+                        <div class="branch-info">
+                            <div class="brach-info-move">
+                                <h1 data-keyword="branch-in-azerbaijan-title">AZERBAIJAN BRANCH</h1>
+                                <p data-keyword="branch-in-azerbaijan-description">Our official representative office in
+                                    Azerbaijan considers and implements creative solutions for marketing issues of
+                                    "Javiddo Group" brands and realizes local corporate sale procedures. At the same
+                                    time, this representation creates a great advantage during cooperation with CIS and
+                                    other nearby countries.<a class="go-to-link-branch" href="./">Подробнее</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
 
     <div class="video-container">
         <video id="background-video" autoplay loop muted playsinline>
@@ -113,7 +168,36 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            zoom: {
+                maxRatio: 3, // Максимальное увеличение
+                minRatio: 1, // Минимальное увеличение
+            },
+            autoplay: {
+                delay: 3000, // Задержка между переключениями в миллисекундах (5 секунд в данном случае)
+                disableOnInteraction: false, // Отключить автопрокрутку после взаимодействия пользователя (необязательно)
+            },
+            preloadImages: 0,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>

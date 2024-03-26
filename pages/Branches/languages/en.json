@@ -1,6 +1,6 @@
 {
-    "header-left": "A leading company in the field of auto parts",
-    "header-center": "ORDER AUTO PARTS",
+    "header-left": "TRUSTED AUTO PART BRAND.",
+    "header-center": "ORDER SPARE PARTS",
     "header-right": "WE WORK ON WEEKDAYS FROM 09:00 TO 19:00",
     "headline-tex": "ALL AUTO PARTS FOR ALL TYPES OF CARS",
     "headline-sub-tex": "ALL BRANDS AND ALL MODELS",
@@ -23,5 +23,9 @@
     "page-certificates": "Certificates",
     "page-faq": "FAQ",
     "page-showrooms": "Show Rooms",
-    "page-home": "Home Page"
+    "page-home": "Home Page",
+    "branch-in-china-title": "CHINESE HEADQUARTERS",
+    "branch-in-china-description": "Javiddo Group is headquartered in Yiwu. Our administrative, research, and production activities are carried out in the city, which is considered the beating heart of international trade and commercial operations. Our superior logistics capabilities in China process both e-commerce and other trade variations realized on a global scale.",
+    "branch-in-azerbaijan-title": "AZERBAIJAN BRANCH",
+    "branch-in-azerbaijan-description": "Our official representative office in Azerbaijan considers and implements creative solutions for marketing issues of \"Javiddo Group\" brands and realizes local corporate sale procedures. At the same time, this representation creates a great advantage during cooperation with CIS and other nearby countries."
 }

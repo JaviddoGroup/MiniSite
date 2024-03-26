@@ -189,3 +189,16 @@ html {
         transform: translateY(-400%);
     }
 }
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.go-to-link-branch {
+    text-decoration: none;
+    color: #ff4200;
+    font-weight: bold;
+}
+
+.go-to-link-branch:hover {
+    transition: 1s;
+    color: #fff;
+}
