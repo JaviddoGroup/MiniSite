@@ -63,22 +63,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const questions = document.querySelectorAll('.question');
+    const answers = document.querySelectorAll('.answer');
 
-
-
-
-
-
-
-
-
-
-
-
-
-window.addEventListener('keydown', function (event) {
-    if (event.keyCode === 123) { // F12
-        console.log('Консоль открыта');
-        // Здесь можно предпринять дополнительные действия
-    }
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            question.classList.toggle('question-active');
+            answer.classList.toggle('active');
+        });
+    });
 });
+
+
+
+
