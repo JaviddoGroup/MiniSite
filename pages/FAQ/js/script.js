@@ -77,5 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const searchBar = document.getElementById('search-bar');
+    const faqs = document.querySelectorAll('.faq');
+
+    searchBar.addEventListener('input', function () {
+        const searchTerm = searchBar.value.trim().toLowerCase();
+
+        faqs.forEach(faq => {
+            const text = faq.textContent.trim().toLowerCase();
+            if (text.includes(searchTerm)) {
+                faq.classList.remove('hidden'); // Показываем элемент, если содержит совпадение с поисковым запросом
+            } else {
+                faq.classList.add('hidden'); // Скрываем элемент, если нет совпадений
+            }
+        });
+    });
+});
+
+
 
 

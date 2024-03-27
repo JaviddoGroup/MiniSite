@@ -1,4 +1,20 @@
 @media screen and (max-width: 2560px) {
+    .search-frame-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .search-frame-center input {
+        width: 70%;
+        height: 40px;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 1px solid grey;
+        padding-left: 10px;
+        color: #909090;
+    }
+
     .faq-pages-body {
         width: 55%;
     }
@@ -9,13 +25,24 @@
         margin-left: 8%;
     }
 
+    .faq-title {
+        width: fit-content;
+        margin-left: 7%;
+    }
+
     .faq-title h1 {
         margin-top: 50px;
+        width: fit-content;
     }
 
     .faq-pages-body {
         margin-left: 15%;
         margin-top: 2%;
+    }
+
+    .faq.hidden {
+        display: none;
+        /* Скрываем элементы с классом "faq", у которых нет совпадений с поисковым запросом */
     }
 
     .question {
@@ -69,6 +96,11 @@
 
 
     /* ----------------------------------------- */
+    #search-bar {
+        z-index: 100;
+        position: relative;
+    }
+
     .faq-title {
         z-index: 100;
         position: relative;
