@@ -196,6 +196,15 @@ html {
     text-decoration: none;
     color: #ff4200;
     font-weight: bold;
+    height: 50px;
+    display: flex;
+    width: 20%;
+    background-color: #192845;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .go-to-link-branch:hover {
