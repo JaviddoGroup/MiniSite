@@ -1,4 +1,87 @@
 @media screen and (max-width: 2560px) {
+    .all-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        z-index: 2;
+        position: relative;
+        justify-content: center;
+    }
+
+    .section-body {
+        width: 70%;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 5%;
+    }
+
+    .blogs-all {
+        width: 100%;
+        background: aqua;
+        height: 100px;
+        display: flex;
+        border-radius: 15px;
+    }
+
+    .blogs-all:hover {
+        background-color: #80808029;
+        transition: 2s;
+        border-radius: 15px;
+    }
+
+    .image {
+        width: 55%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+
+
+    .blog-text {
+        color: #FFF;
+        margin-left: 5px;
+    }
+
+    .blog-text p {
+        margin: 5px;
+    }
+
+    .blog-text p:hover {
+        color: #d12a29;
+        transition: 1s;
+    }
+
+    .blog {
+        height: 100px;
+        /* Пример высоты блога */
+        background-color: transparent;
+    }
+
+    .load-more {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .load-more button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+
+
+
+    /* ------------------------ */
     .search-frame-center {
         display: flex;
         justify-content: center;

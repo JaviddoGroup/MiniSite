@@ -202,3 +202,8 @@ html {
     transition: 1s;
     color: #fff;
 }
+
+.all-section {
+    position: relative;
+    z-index: 2;
+}

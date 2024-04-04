@@ -98,3 +98,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+// --------------------------------
+let blogs = document.querySelectorAll('.blog');
+let loadMoreButton = document.getElementById('load-more');
+let blogCount = blogs.length;
+let visibleBlogs = 3; // Изменено на количество блогов в одной строке
+let currentRow = 0;
+
+function loadMore() {
+    // Определяем следующие блоги, которые будут отображены
+    let start = currentRow * visibleBlogs;
+    let end = start + visibleBlogs * 2; // Умножаем на 2, так как хотим показывать следующие 2 строки
+
+    // Отображаем следующие блоги
+    for (let i = start; i < end && i < blogCount; i++) {
+        blogs[i].classList.remove('hidden');
+    }
+
+    // Если больше блогов нет, скрываем кнопку Load More
+    if (end >= blogCount) {
+        loadMoreButton.style.display = 'none';
+    }
+
+    currentRow += 2; // Увеличиваем на 2, так как показываем следующие 2 строки
+}
+
+// Скрытие всех блогов, начиная с visibleBlogs * 3 (то есть с 9-го блога)
+for (let i = visibleBlogs * 3; i < blogCount; i++) {
+    blogs[i].classList.add('hidden');
+}
