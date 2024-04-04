@@ -99,7 +99,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 50%;
+        height: 45%;
     }
 
     .laguage-section {
@@ -1759,7 +1759,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 40%;
+        height: 35%;
     }
 
     .laguage-section {
@@ -2307,7 +2307,7 @@
     }
 
     .menus a {
-        font-size: 18px;
+        font-size: 16px;
         display: flex;
         justify-content: center;
         margin: 5px;
@@ -2317,7 +2317,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -2643,7 +2643,7 @@
     }
 
     .menus a {
-        font-size: 18px;
+        font-size: 16px;
         display: flex;
         justify-content: center;
         margin: 5px;
@@ -2653,7 +2653,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -2757,7 +2757,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 25%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -2990,7 +2990,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -3365,7 +3365,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -3469,7 +3469,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 15%;
+        height: 20%;
     }
 
     .laguage-section {
@@ -3746,7 +3746,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -4126,7 +4126,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -4506,7 +4506,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {
@@ -4890,7 +4890,7 @@
         background-color: #60606042;
         border-radius: 5px;
         align-items: center;
-        height: 30px;
+        height: 25px;
     }
 
     .nav-bar-active {

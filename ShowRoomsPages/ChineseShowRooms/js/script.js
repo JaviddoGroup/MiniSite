@@ -62,9 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-if (window.location.pathname.endsWith('.html')) {
-    history.replaceState({}, '', window.location.pathname.slice(0, -5));
-}
 
 
 
