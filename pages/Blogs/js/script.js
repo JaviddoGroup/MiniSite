@@ -100,31 +100,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // --------------------------------
-let blogs = document.querySelectorAll('.blog');
-let loadMoreButton = document.getElementById('load-more');
-let blogCount = blogs.length;
-let visibleBlogs = 3; // Изменено на количество блогов в одной строке
-let currentRow = 0;
 
-function loadMore() {
-    // Определяем следующие блоги, которые будут отображены
-    let start = currentRow * visibleBlogs;
-    let end = start + visibleBlogs * 2; // Умножаем на 2, так как хотим показывать следующие 2 строки
+$(document).ready(function () {
+    var $blogContainer = $('#blog-container');
+    var $viewMoreButton = $('#view-more-btn');
 
-    // Отображаем следующие блоги
-    for (let i = start; i < end && i < blogCount; i++) {
-        blogs[i].classList.remove('hidden');
+    // Функция для показа скрытых блогов
+    function showHiddenBlogs() {
+        var hiddenBlogs = $blogContainer.find('.blog.hidden').slice(0, 6); // Загружаем 6 блогов вместо 3
+        hiddenBlogs.removeClass('hidden');
+        // Если больше блогов нет, скрываем кнопку "View More"
+        if ($blogContainer.find('.blog.hidden').length === 0) {
+            $('#view-more-btn-container').hide();
+        }
     }
+    // Показываем скрытые блоги при загрузке страницы
+    showHiddenBlogs();
 
-    // Если больше блогов нет, скрываем кнопку Load More
-    if (end >= blogCount) {
-        loadMoreButton.style.display = 'none';
-    }
+    // Добавляем обработчик события для кнопки "View More"
+    $viewMoreButton.on('click', function () {
+        showHiddenBlogs();
+    });
+});
 
-    currentRow += 2; // Увеличиваем на 2, так как показываем следующие 2 строки
-}
+$(document).ready(function () {
+    var $input = $('.input'); // Получаем поле ввода
+    var $blogs = $('.blog'); // Получаем все блоги
 
-// Скрытие всех блогов, начиная с visibleBlogs * 3 (то есть с 9-го блога)
-for (let i = visibleBlogs * 3; i < blogCount; i++) {
-    blogs[i].classList.add('hidden');
-}
+    // Обработчик ввода в поле поиска
+    $input.on('input', function () {
+        var searchText = $(this).val().toLowerCase(); // Получаем текст из поля в нижнем регистре
+
+        // Проходимся по каждому блогу и скрываем или отображаем в зависимости от соответствия текста
+        $blogs.each(function () {
+            var blogText = $(this).find('.blog-text p').text().toLowerCase(); // Получаем текст блога в нижнем регистре
+            if (blogText.includes(searchText)) {
+                $(this).show(); // Отображаем блог, если текст соответствует
+            } else {
+                $(this).hide(); // Скрываем блог, если текст не соответствует
+            }
+        });
+    });
+});
