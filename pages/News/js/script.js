@@ -96,5 +96,61 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// -------------------------------
+
+function toggleActive(element) {
+    var gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
+    element.classList.add('active');
+}
+
+
+// -------------------------
+// Получаем все элементы с классом "news-preview"
+var newsPreviews = document.querySelectorAll('.news-preview');
+
+// Проходим по каждому элементу и добавляем обработчик события клика
+newsPreviews.forEach(function (newsPreview) {
+    // Находим элемент с классом "news-view" внутри текущей секции
+    var newsView = newsPreview.querySelector('.news-view');
+
+    // Получаем текущее количество просмотров из локального хранилища, если оно есть
+    var views = localStorage.getItem('newsViews') ? parseInt(localStorage.getItem('newsViews')) : 0;
+
+    // Обновляем отображение количества просмотров
+    updateViewsDisplay();
+
+    // Добавляем обработчик события клика
+    newsPreview.addEventListener('click', function () {
+        // Увеличиваем значение просмотров на 1
+        views++;
+
+        // Обновляем отображение количества просмотров
+        updateViewsDisplay();
+
+        // Сохраняем количество просмотров в локальное хранилище
+        localStorage.setItem('newsViews', views.toString());
+    });
+
+    // Функция для обновления отображения количества просмотров
+    function updateViewsDisplay() {
+        // Если количество просмотров превышает 1000000, переводим его в миллионы
+        if (views >= 1000000) {
+            var millions = Math.floor(views / 1000000 * 10) / 10; // Округляем до одного знака после запятой
+            newsView.textContent = millions + 'M';
+        }
+        // Если количество просмотров превышает 1000, переводим его в тысячи
+        else if (views >= 1000) {
+            var thousands = Math.floor(views / 1000);
+            newsView.textContent = thousands + 'K';
+        } else {
+            // Иначе просто показываем количество просмотров
+            newsView.textContent = views;
+        }
+    }
+});
+
 
 

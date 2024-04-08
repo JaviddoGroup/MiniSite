@@ -1,4 +1,60 @@
 @media screen and (max-width: 2560px) {
+
+    .news-section {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .grid-item {
+        width: calc(22% - 20px);
+        margin: 10px;
+        background-color: #f70000;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+
+    .active {
+        background-color: #ccc;
+    }
+
+    .news-preview {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news-image img {
+        border-radius: 15px;
+    }
+
+    .news-text {
+        text-align: left;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .news-text p {
+        margin-top: 0;
+    }
+
+
+    /* --------------------------------------- */
     .search-frame-center {
         display: flex;
         justify-content: center;
