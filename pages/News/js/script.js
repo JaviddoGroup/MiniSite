@@ -96,61 +96,74 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// -------------------------------
+// ------------------------------
+// Находим все иконки по классу
+const icons = document.querySelectorAll('.news-link');
 
-function toggleActive(element) {
-    var gridItems = document.querySelectorAll('.grid-item');
-    gridItems.forEach(function (item) {
-        item.classList.remove('active');
+// Добавляем обработчик события клика на каждую иконку
+icons.forEach(icon => {
+    icon.addEventListener('click', () => {
+        // Получаем текст для копирования из атрибута data-copytext иконки
+        const textToCopy = icon.getAttribute('data-copytext');
+
+        // Копируем текст в буфер обмена
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                // Если копирование прошло успешно, выводим уведомление
+                const notification = document.createElement('div');
+                notification.innerHTML = `
+                    <div class="notification-content">
+                        <p data-keyword="notification">Copied</p>
+                    </div>
+                `;
+                notification.classList.add('notification');
+                document.body.appendChild(notification);
+
+                // Удаляем уведомление через несколько секунд
+                setTimeout(() => {
+                    notification.remove();
+                }, 1500);
+            })
+            .catch(err => {
+                // Если произошла ошибка при копировании, выводим сообщение об ошибке
+                console.error('Ошибка при копировании текста: ', err);
+            });
     });
-    element.classList.add('active');
+});
+
+// -------------------------------------
+// Функция для удаления класса active у элемента grid-item при клике на кнопку закрытия
+function removeActiveClass(event) {
+    var closeButton = event.target; // Получаем кнопку, на которую был клик
+    var gridItem = closeButton.closest('.grid-item'); // Находим ближайший элемент с классом grid-item
+    if (gridItem) {
+        gridItem.classList.remove('active'); // Удаляем класс active у элемента grid-item
+    }
+    event.stopPropagation(); // Остановка распространения события, чтобы не вызывался toggleActive
+}
+// Функция для удаления класса active у элемента grid-item при клике вне области pop-up
+function removeActiveClassOutsidePopup(event) {
+    var popUp = document.querySelector('.pop-up'); // Находим элемент с классом pop-up
+    var gridItem = document.querySelector('.grid-item.active'); // Находим элемент с классом grid-item и active
+
+    // Проверяем, был ли клик вне области pop-up и grid-item
+    if (popUp && !popUp.contains(event.target) && gridItem && !gridItem.contains(event.target)) {
+        gridItem.classList.remove('active'); // Удаляем класс active у элемента grid-item
+    }
 }
 
+// Добавляем обработчик события клика на документ
+document.addEventListener('click', removeActiveClassOutsidePopup);
 
-// -------------------------
-// Получаем все элементы с классом "news-preview"
-var newsPreviews = document.querySelectorAll('.news-preview');
+function toggleActive(element) {
+    // Находим родительский элемент grid-item
+    var gridItem = element.closest('.grid-item');
 
-// Проходим по каждому элементу и добавляем обработчик события клика
-newsPreviews.forEach(function (newsPreview) {
-    // Находим элемент с классом "news-view" внутри текущей секции
-    var newsView = newsPreview.querySelector('.news-view');
-
-    // Получаем текущее количество просмотров из локального хранилища, если оно есть
-    var views = localStorage.getItem('newsViews') ? parseInt(localStorage.getItem('newsViews')) : 0;
-
-    // Обновляем отображение количества просмотров
-    updateViewsDisplay();
-
-    // Добавляем обработчик события клика
-    newsPreview.addEventListener('click', function () {
-        // Увеличиваем значение просмотров на 1
-        views++;
-
-        // Обновляем отображение количества просмотров
-        updateViewsDisplay();
-
-        // Сохраняем количество просмотров в локальное хранилище
-        localStorage.setItem('newsViews', views.toString());
-    });
-
-    // Функция для обновления отображения количества просмотров
-    function updateViewsDisplay() {
-        // Если количество просмотров превышает 1000000, переводим его в миллионы
-        if (views >= 1000000) {
-            var millions = Math.floor(views / 1000000 * 10) / 10; // Округляем до одного знака после запятой
-            newsView.textContent = millions + 'M';
-        }
-        // Если количество просмотров превышает 1000, переводим его в тысячи
-        else if (views >= 1000) {
-            var thousands = Math.floor(views / 1000);
-            newsView.textContent = thousands + 'K';
-        } else {
-            // Иначе просто показываем количество просмотров
-            newsView.textContent = views;
-        }
+    // Добавляем или удаляем класс active в зависимости от его наличия
+    if (gridItem) {
+        gridItem.classList.toggle('active');
     }
-});
+}
 
 
 
