@@ -77,25 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const searchBar = document.getElementById('search-bar');
-    const faqs = document.querySelectorAll('.faq');
-
-    searchBar.addEventListener('input', function () {
-        const searchTerm = searchBar.value.trim().toLowerCase();
-
-        faqs.forEach(faq => {
-            const text = faq.textContent.trim().toLowerCase();
-            if (text.includes(searchTerm)) {
-                faq.classList.remove('hidden'); // Показываем элемент, если содержит совпадение с поисковым запросом
-            } else {
-                faq.classList.add('hidden'); // Скрываем элемент, если нет совпадений
-            }
-        });
-    });
-});
-
-
 // ------------------------------
 // Находим все иконки по классу
 const icons = document.querySelectorAll('.news-link');
@@ -165,5 +146,20 @@ function toggleActive(element) {
     }
 }
 
+// -------------------------------------------------------
+function filterBlogs() {
+    const searchBar = document.getElementById('search-bar');
+    const searchTerm = searchBar.value.toLowerCase();
+    const gridItems = document.querySelectorAll('.grid-item');
+
+    gridItems.forEach(item => {
+        const title = item.dataset.title.toLowerCase();
+        if (title.includes(searchTerm)) {
+            item.style.display = 'block'; // Показываем блог, если текст содержит запрос
+        } else {
+            item.style.display = 'none'; // Скрываем блог, если текст не содержит запрос
+        }
+    });
+}
 
 

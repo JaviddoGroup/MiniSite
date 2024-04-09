@@ -1,4 +1,26 @@
 @media screen and (max-width: 2560px) {
+    .search-frame-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .search-frame-center input {
+        width: 75%;
+        height: 50px;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 1px solid grey;
+        padding-left: 10px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    #search-bar {
+        z-index: 1;
+        position: relative;
+    }
+
     .news:hover {
         border: 1px solid white;
         border-radius: 10px;
@@ -10,8 +32,11 @@
     }
 
     .news {
+        width: 332px;
         border: 1px solid #ffffff00;
         padding: 5px;
+        transition: 1s;
+
     }
 
     .news-section {
@@ -55,6 +80,7 @@
 
     .news-image img {
         border-radius: 15px;
+        width: 100%;
     }
 
     .news-text {
@@ -82,10 +108,10 @@
 
     .notification {
         position: fixed;
-        top: 15px;
+        top: 11%;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #192845cd;
+        background-color: #ff000057;
         color: white;
         padding: 10px;
         border-radius: 5px;
@@ -95,7 +121,7 @@
         text-align: center;
         font-weight: bold;
         font-size: 20px;
-        color: #d12a29;
+        color: #fff;
         backdrop-filter: blur(5px);
     }
 
@@ -182,22 +208,7 @@
 
 
     /* --------------------------------------- */
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
 
-    .search-frame-center input {
-        width: 70%;
-        height: 50px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 20px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -296,10 +307,6 @@
 
 
     /* ----------------------------------------- */
-    #search-bar {
-        z-index: 1;
-        position: relative;
-    }
 
     .faq-title {
         z-index: 1;
@@ -635,22 +642,6 @@
 }
 
 @media screen and (max-width: 2000px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -1047,22 +1038,6 @@
 }
 
 @media screen and (max-width: 1800px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -1461,22 +1436,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -1880,22 +1839,6 @@
 }
 
 @media screen and (max-width: 1500px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -2298,22 +2241,6 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -2712,22 +2639,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -3130,22 +3041,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 70%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -3551,22 +3446,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 80%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -3973,22 +3852,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 80%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -4433,22 +4296,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 80%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -4903,22 +4750,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 85%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -5372,22 +5203,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 85%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
@@ -5842,22 +5657,6 @@
 }
 
 @media screen and (max-width: 360px) {
-    .search-frame-center {
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-    .search-frame-center input {
-        width: 85%;
-        height: 40px;
-        border-radius: 15px;
-        background-color: transparent;
-        border: 1px solid grey;
-        padding-left: 10px;
-        color: #fff;
-        font-size: 18px;
-    }
 
     .faq-title h1:first-child {
         color: #fff;
