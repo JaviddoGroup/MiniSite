@@ -104,6 +104,10 @@
 
     }
 
+    .news-save img {
+        width: 24px;
+    }
+
     .notification {
         position: fixed;
         top: 11%;
