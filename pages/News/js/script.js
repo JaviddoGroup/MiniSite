@@ -163,3 +163,16 @@ function filterBlogs() {
 }
 
 // ---------------------------------
+
+// Функция для переключения изображения и добавления класса
+function SwitchFilter() {
+    var saveImage = document.getElementById("saveImage");
+    var gridContainer = document.querySelector(".grid-container");
+    if (saveImage.src.includes("unsave")) {
+        saveImage.src = "./media/icon/save.svg";
+        gridContainer.classList.add("active-filter");
+    } else {
+        saveImage.src = "./media/icon/unsave.svg";
+        gridContainer.classList.remove("active-filter");
+    }
+}

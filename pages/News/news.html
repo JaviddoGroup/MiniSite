@@ -10,7 +10,6 @@
     <title data-keyword="page-title">Javiddo Group | News</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <script src="./js/database.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
@@ -94,6 +93,10 @@
         <div class="search-frame-center">
             <input type="text" id="search-bar" placeholder="Search..." oninput="filterBlogs()">
         </div>
+        <div class="select-save" onclick="SwitchFilter()">
+            <img id="saveImage" src="./media/icon/unsave.svg" alt="">
+        </div>
+
     </div>
     <div class="news-section">
         <div class="grid-container" id="gridContainer">
@@ -143,7 +146,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/ikIhsy89te0?si=zq59CyTwGEWoSESx" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -203,7 +206,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/SWpBe4vLlKM?si=kbUkoLG9M0CDc-L3" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -263,7 +266,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/0jPxTmI0DOg?si=TW6RUWXYxzglXWKe" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -323,7 +326,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/7so1O8qsUVs?si=ZxBnw2ZneKhd8gdL" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -383,7 +386,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/iUWZzWM0L7w?si=Qj-U65NRC9vQQ17X" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -443,7 +446,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/Sw9tRzmG8WM?si=2nQ1QWS9Kj7c0NAs" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -503,7 +506,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/EqqEahGpNPo?si=rnIFv215CyRjBj5H" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -563,7 +566,7 @@
                                 <div class="video-frame"><iframe frameborder="0" allowfullscreen=""
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         referrerpolicy="strict-origin-when-cross-origin"
-                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="500px"
+                                        title="DIY alternator repair | AUTODOC tips" width="100%" height="100%"
                                         src="https://www.youtube.com/embed/fJJf-Dp85rw?si=ejtNMHdKG9KvU84c" id="widget4"
                                         data-gtm-yt-inspected-12138811_34="true"></iframe>
                                 </div>
@@ -616,59 +619,84 @@
 
     <script src="./js/script.js"></script>
     <script>
-        // Функция для переключения сохранения новости
+        // Функция для переключения состояния сохранения новости
         function toggleSave(element) {
-            // Получаем родительский элемент .news-save
-            const newsSave = element.closest('.news-save');
+            // Получаем родительский элемент .grid-item
+            const gridItem = element.closest('.grid-item');
 
-            // Переключаем класс save
-            newsSave.classList.toggle('save');
+            // Переключаем класс save для родительского элемента .grid-item
+            gridItem.classList.toggle('save');
 
             // Получаем изображение внутри .news-save
-            const img = newsSave.querySelector('img');
+            const img = element.querySelector('img');
 
-            // Получаем индекс элемента
-            const index = Array.from(element.parentElement.parentElement.parentElement.parentElement.children).indexOf(element.parentElement.parentElement.parentElement);
-
-            // Получаем сохраненные элементы из локального хранилища
-            let savedIndexes = JSON.parse(localStorage.getItem('savedIndexes')) || [];
-
-            // Проверяем, есть ли у .news-save класс save
-            if (newsSave.classList.contains('save')) {
+            // Проверяем, есть ли у .grid-item класс save
+            if (gridItem.classList.contains('save')) {
                 // Если есть, меняем изображение на save.svg
                 img.src = './media/icon/save.svg';
-                // Добавляем индекс элемента в массив сохраненных элементов
-                savedIndexes.push(index);
+                // Получаем атрибут data-title у .grid-item
+                const title = gridItem.getAttribute('data-title');
+                // Сохраняем состояние в куки
+                document.cookie = encodeURIComponent(title) + "=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             } else {
                 // Если нет, меняем изображение на unsave.svg
                 img.src = './media/icon/unsave.svg';
-                // Удаляем индекс элемента из массива сохраненных элементов
-                savedIndexes = savedIndexes.filter(savedIndex => savedIndex !== index);
-            }
-
-            // Сохраняем массив индексов в локальное хранилище
-            localStorage.setItem('savedIndexes', JSON.stringify(savedIndexes));
-        }
-
-        // Функция для загрузки состояния из локального хранилища
-        function loadFromLocalStorage() {
-            // Получаем сохраненные индексы из локального хранилища
-            const savedIndexes = JSON.parse(localStorage.getItem('savedIndexes'));
-
-            // Если индексы есть
-            if (savedIndexes) {
-                // Проходимся по каждому индексу
-                savedIndexes.forEach(function (index) {
-                    // Получаем элемент с этим индексом и добавляем ему класс .save
-                    document.querySelectorAll('.grid-item')[index].querySelector('.news-save').classList.add('save');
-                });
+                // Получаем атрибут data-title у .grid-item
+                const title = gridItem.getAttribute('data-title');
+                // Удаляем состояние из куки
+                document.cookie = encodeURIComponent(title) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
             }
         }
 
-        // Вызываем функцию загрузки состояния из локального хранилища при загрузке страницы
-        document.addEventListener('DOMContentLoaded', function () {
-            loadFromLocalStorage();
+        // Проверяем куки при загрузке страницы
+        window.addEventListener('load', function () {
+            // Получаем все куки и разбиваем их на массив
+            const cookies = document.cookie.split(';');
+
+            // Проходимся по каждому куки
+            cookies.forEach(cookie => {
+                // Разбиваем куки на название и значение
+                const [name, value] = cookie.split('=');
+                // Получаем элемент по названию из куки
+                const element = document.querySelector('.grid-item[data-title="' + decodeURIComponent(name.trim()) + '"] .news-save');
+                if (element && value.trim() === 'true') {
+                    // Если значение куки равно true, добавляем класс save
+                    element.classList.add('save');
+                    // Меняем изображение на save.svg
+                    element.querySelector('img').src = './media/icon/save.svg';
+                }
+            });
         });
+
+
+
+        // Функция для установки класса .save для элементов с изображением ./media/icon/save.svg
+        function setSaveClass() {
+            // Получаем все элементы .news-save
+            const newsSaveElements = document.querySelectorAll('.news-save');
+
+            // Проходимся по каждому элементу .news-save
+            newsSaveElements.forEach(newsSaveElement => {
+                // Получаем изображение внутри .news-save
+                const img = newsSaveElement.querySelector('img');
+
+                // Проверяем путь к изображению
+                if (img.src.endsWith('/save.svg')) {
+                    // Если изображение - ./media/icon/save.svg, добавляем класс .save для родительского элемента .grid-item
+                    const gridItem = newsSaveElement.closest('.grid-item');
+                    if (gridItem) {
+                        gridItem.classList.add('save');
+                    }
+                }
+            });
+        }
+
+        // Вызываем функцию после загрузки страницы
+        window.addEventListener('load', setSaveClass);
+
+
+
+
 
 
     </script>
