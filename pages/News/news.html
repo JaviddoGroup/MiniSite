@@ -616,32 +616,61 @@
 
     <script src="./js/script.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            zoom: {
-                maxRatio: 3, // Максимальное увеличение
-                minRatio: 1, // Минимальное увеличение
-            },
-            autoplay: {
-                delay: 3000, // Задержка между переключениями в миллисекундах (5 секунд в данном случае)
-                disableOnInteraction: false, // Отключить автопрокрутку после взаимодействия пользователя (необязательно)
-            },
-            preloadImages: 0,
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        // Функция для переключения сохранения новости
+        function toggleSave(element) {
+            // Получаем родительский элемент .news-save
+            const newsSave = element.closest('.news-save');
+
+            // Переключаем класс save
+            newsSave.classList.toggle('save');
+
+            // Получаем изображение внутри .news-save
+            const img = newsSave.querySelector('img');
+
+            // Получаем индекс элемента
+            const index = Array.from(element.parentElement.parentElement.parentElement.parentElement.children).indexOf(element.parentElement.parentElement.parentElement);
+
+            // Получаем сохраненные элементы из локального хранилища
+            let savedIndexes = JSON.parse(localStorage.getItem('savedIndexes')) || [];
+
+            // Проверяем, есть ли у .news-save класс save
+            if (newsSave.classList.contains('save')) {
+                // Если есть, меняем изображение на save.svg
+                img.src = './media/icon/save.svg';
+                // Добавляем индекс элемента в массив сохраненных элементов
+                savedIndexes.push(index);
+            } else {
+                // Если нет, меняем изображение на unsave.svg
+                img.src = './media/icon/unsave.svg';
+                // Удаляем индекс элемента из массива сохраненных элементов
+                savedIndexes = savedIndexes.filter(savedIndex => savedIndex !== index);
+            }
+
+            // Сохраняем массив индексов в локальное хранилище
+            localStorage.setItem('savedIndexes', JSON.stringify(savedIndexes));
+        }
+
+        // Функция для загрузки состояния из локального хранилища
+        function loadFromLocalStorage() {
+            // Получаем сохраненные индексы из локального хранилища
+            const savedIndexes = JSON.parse(localStorage.getItem('savedIndexes'));
+
+            // Если индексы есть
+            if (savedIndexes) {
+                // Проходимся по каждому индексу
+                savedIndexes.forEach(function (index) {
+                    // Получаем элемент с этим индексом и добавляем ему класс .save
+                    document.querySelectorAll('.grid-item')[index].querySelector('.news-save').classList.add('save');
+                });
+            }
+        }
+
+        // Вызываем функцию загрузки состояния из локального хранилища при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function () {
+            loadFromLocalStorage();
         });
+
+
     </script>
 
 
