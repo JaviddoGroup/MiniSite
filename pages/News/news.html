@@ -10,6 +10,7 @@
     <title data-keyword="page-title">Javiddo Group | News</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/database.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
@@ -96,7 +97,8 @@
     </div>
     <div class="news-section">
         <div class="grid-container" id="gridContainer">
-            <div class="grid-item" onclick="updateViews('Top 5 reasons why the suspension knocks | AUTODOC tips')"
+            <div class="grid-item" id="news1"
+                onclick="updateViews('Top 5 reasons why the suspension knocks | AUTODOC tips')"
                 data-title="Top 5 reasons why the suspension knocks | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
@@ -607,7 +609,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
-    <script src="./js/database.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',

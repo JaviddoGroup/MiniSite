@@ -1,11 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore, collection, doc, updateDoc, increment } from "firebase/firestore";
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyD_uzRUUEwNyXBuqi-yAql3xafyrx3YDOo",
     authDomain: "hellper-javiddo.firebaseapp.com",
@@ -19,3 +16,27 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getFirestore();
+
+// Функция для увеличения счетчика просмотров
+async function incrementViews(newsTitle) {
+    const newsDocRef = doc(db, "news", newsTitle);
+
+    try {
+        // Атомарное обновление значения счетчика просмотров
+        await updateDoc(newsDocRef, {
+            views: increment(1)
+        });
+        console.log("Счетчик просмотров успешно увеличен.");
+    } catch (error) {
+        console.error("Ошибка при обновлении счетчика просмотров: ", error);
+    }
+}
+
+// Функция для обновления просмотров при открытии новости
+function updateViews(newsTitle) {
+    incrementViews(newsTitle);
+}
+
+// Ваш остальной JavaScript код здесь
+// ...
