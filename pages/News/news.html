@@ -96,10 +96,11 @@
     </div>
     <div class="news-section">
         <div class="grid-container" id="gridContainer">
-            <div class="grid-item" data-title="Top 5 reasons why the suspension knocks | AUTODOC tips">
+            <div class="grid-item" onclick="updateViews('Top 5 reasons why the suspension knocks | AUTODOC tips')"
+                data-title="Top 5 reasons why the suspension knocks | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (1).jpg" alt="News One">
                             </div>
@@ -158,7 +159,7 @@
             <div class="grid-item" data-title="DIY alternator repair | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (2).jpg" alt="News One">
                             </div>
@@ -217,7 +218,7 @@
             <div class="grid-item" data-title="How to Make a DIY Foam Sprayer | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (3).jpg" alt="News One">
                             </div>
@@ -276,7 +277,7 @@
             <div class="grid-item" data-title="Top 5 brake repair mistakes | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (4).jpg" alt="News One">
                             </div>
@@ -335,7 +336,7 @@
             <div class="grid-item" data-title="How to unlock your car without a key | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (5).jpg" alt="News One">
                             </div>
@@ -394,7 +395,7 @@
             <div class="grid-item" data-title="How to remove scratches from car plastic | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (6).jpg" alt="News One">
                             </div>
@@ -453,7 +454,7 @@
             <div class="grid-item" data-title="DIY car soundproofing | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (7).jpg" alt="News One">
                             </div>
@@ -512,7 +513,7 @@
             <div class="grid-item" data-title="DIY brake caliper restoration | AUTODOC tips">
                 <div class="previw">
                     <div class="news">
-                        <div class="open-pop-up" onclick="toggleActive(this)">
+                        <div class="open-pop-up news-view-increment" onclick="toggleActive(this)">
                             <div class="news-image">
                                 <img src="./media/img/news/news (8).jpg" alt="News One">
                             </div>
@@ -582,7 +583,6 @@
 
 
 
-
     <div class="video-container">
         <video id="background-video" autoplay loop muted playsinline>
             <source src="./media/video/background-prod.mp4" type="video/mp4">
@@ -605,7 +605,9 @@
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="./js/script.js"></script>
+    <script src="./js/database.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
@@ -634,6 +636,8 @@
             },
         });
     </script>
+
+
 </body>
 
 </html>
