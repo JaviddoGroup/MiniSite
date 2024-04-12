@@ -46,10 +46,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(response => response.json())
                 .then(data => {
                     replaceKeywords(data);
+                    // Сохраняем выбранный язык в localStorage
+                    localStorage.setItem('selectedLanguage', lang);
                 })
                 .catch(error => console.error('Error:', error));
         });
     });
+
+    // Проверяем, есть ли сохраненный язык при загрузке страницы
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang) {
+        fetch(`./languages/${savedLang}.json`)
+            .then(response => response.json())
+            .then(data => {
+                replaceKeywords(data);
+            })
+            .catch(error => console.error('Error:', error));
+    }
 
     function replaceKeywords(data) {
         const elementsWithKeywords = document.querySelectorAll('[data-keyword]');
@@ -61,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
 
 
 

@@ -97,7 +97,7 @@
     }
 
     .radio-inputs .radio input:checked+.name {
-        background-color: #fff;
+        background-color: transparent !important;
         font-weight: 600;
     }
 
