@@ -32,5 +32,8 @@
     "page-title": "Javiddo Group | Sertifikatlar",
     "go-to-link-branch": "Daha ətraflı",
     "page-news": "Xəbərlər",
-    "page-blogs": "Bloglar"
+    "page-blogs": "Bloglar",
+    "not-found-title": "Ups! Səhifə tapılmadı | 404",
+    "not-found-description": "Üzr istəyirik, ancaq axtardığınız səhifə tapılmadı. Onun adı dəyişdirilib, ya silinmişdir, ya da müvəqqəti olaraq əlçatan deyil. URL-dəki səhvə yoxlayın və yenidən cəhd edin, ya ana səhifəyə qayıdın.",
+    "back-to-home-button": "DƏVAM ETMƏK ÜÇÜN ANA SƏHİFƏYƏ QAYITIN"
 }

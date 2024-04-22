@@ -32,5 +32,8 @@
     "page-title": "Javiddo Group | Certificates",
     "go-to-link-branch": "More",
     "page-news": "News",
-    "page-blogs": "Blogs"
+    "page-blogs": "Blogs",
+    "not-found-title": "Oops! Page Not Found | 404",
+    "not-found-description": "We're sorry, but the page you are looking for cannot be found. It might have been removed, had its name changed, or is temporarily unavailable. Please check the URL for errors and try again, or go back to the homepage.",
+    "back-to-home-button": "RETURN TO HOMEPAGE TO CONTINUE EXPLORING"
 }
