@@ -1,24 +1,19 @@
-// Получение кода ошибки из URL
-const errorCode = parseInt(window.location.search.substring(1));
+document.addEventListener('DOMContentLoaded', function () {
+    const errorCode = parseInt(window.location.search.substring(1));
 
-// Определение сообщения об ошибке
-let errorMessage;
-switch (errorCode) {
-    case 404:
-        errorMessage = "Page not found";
-        break;
-    case 402:
-        errorMessage = "Payment Required";
-        break;
-    case 505:
-        errorMessage = "HTTP Version Not Supported";
-        break;
-    default:
-        errorMessage = "An error has occurred";
-}
-
-// Вывод сообщения об ошибке
-document.getElementById('error-container').innerHTML = `
-     <h1>Error ${errorCode}</h1>
-     <p>${errorMessage}</p>
- `;
+    switch (errorCode) {
+        case 404:
+            window.location.href = './Errors/error404.html';
+            break;
+        case 402:
+            window.location.href = './Errors/error402.html';
+            break;
+        case 505:
+            window.location.href = './Errors/error505.html';
+            break;
+        // Добавьте другие коды состояния по мере необходимости
+        default:
+            // Если код состояния не определен, ничего не делаем
+            break;
+    }
+});
