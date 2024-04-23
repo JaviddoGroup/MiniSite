@@ -35,5 +35,9 @@
     "page-blogs": "Bloglar",
     "not-found-title": "Ups! Səhifə tapılmadı | 404",
     "not-found-description": "Üzr istəyirik, ancaq axtardığınız səhifə tapılmadı. Onun adı dəyişdirilib, ya silinmişdir, ya da müvəqqəti olaraq əlçatan deyil. URL-dəki səhvə yoxlayın və yenidən cəhd edin, ya ana səhifəyə qayıdın.",
-    "back-to-home-button": "DƏVAM ETMƏK ÜÇÜN ANA SƏHİFƏYƏ QAYITIN"
+    "back-to-home-button": "DƏVAM ETMƏK ÜÇÜN ANA SƏHİFƏYƏ QAYITIN",
+    "server-error-title": "Server Konfiqurasiya Problemaları | 505",
+    "server-error-description": "Server daxili xəta və ya yanlış konfiqurasiya ilə üzləşdi və sorğunu yerinə yetirə bilmədi. Bu, serverin konfiqurasiya ayarlarında problem olmasından kaynaklanabilir.",
+    "payment-error-title": "Məzmunu əldə etmək üçün ödəniş tələb olunur | 402",
+    "payment-error-description": "Siz ödəniş tələb edən bir resursa giriş cəhd edirsiniz. Zəhmət olmasa, lazımi ödəniş məlumatlarına malik olduğunuzdan əmin olun və yardım üçün dəstəyə müraciət edin."
 }

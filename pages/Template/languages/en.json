@@ -27,5 +27,12 @@
     "branch-in-china-title": "CHINESE HEADQUARTERS",
     "branch-in-china-description": "Javiddo Group is headquartered in Yiwu. Our administrative, research, and production activities are carried out in the city, which is considered the beating heart of international trade and commercial operations. Our superior logistics capabilities in China process both e-commerce and other trade variations realized on a global scale.",
     "branch-in-azerbaijan-title": "AZERBAIJAN BRANCH",
-    "branch-in-azerbaijan-description": "Our official representative office in Azerbaijan considers and implements creative solutions for marketing issues of \"Javiddo Group\" brands and realizes local corporate sale procedures. At the same time, this representation creates a great advantage during cooperation with CIS and other nearby countries."
+    "branch-in-azerbaijan-description": "Our official representative office in Azerbaijan considers and implements creative solutions for marketing issues of \"Javiddo Group\" brands and realizes local corporate sale procedures. At the same time, this representation creates a great advantage during cooperation with CIS and other nearby countries.",
+    "not-found-title": "Oops! Page Not Found | 404",
+    "not-found-description": "We're sorry, but the page you are looking for cannot be found. It might have been removed, had its name changed, or is temporarily unavailable. Please check the URL for errors and try again, or go back to the homepage.",
+    "back-to-home-button": "RETURN TO HOMEPAGE TO CONTINUE EXPLORING",
+    "server-error-title": "Server Configuration Issue | 505",
+    "server-error-description": "The server encountered an internal error or misconfiguration and was unable to complete your request. This might be due to an issue with the server's configuration settings.",
+    "payment-error-title": "Payment Required to Access Content | 402",
+    "payment-error-description": "You are trying to access a resource that requires payment. Please make sure you have the necessary payment credentials or contact support for assistance."
 }

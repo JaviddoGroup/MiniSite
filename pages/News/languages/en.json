@@ -86,5 +86,12 @@
     "service-faq-answer-five": "We are delighted to see your passion. Javiddo Group always strives to go forward and expand its branches, so it always needs new professionals to achieve success. If you can’t see the position you are aiming to work in, please don’t refrain from sending your CV or portfolio to hr@javiddo.com",
     "page-title": "Javiddo Group | News",
     "page-blogs": "Blogs",
-    "notification": "Copied"
+    "notification": "Copied",
+    "not-found-title": "Oops! Page Not Found | 404",
+    "not-found-description": "We're sorry, but the page you are looking for cannot be found. It might have been removed, had its name changed, or is temporarily unavailable. Please check the URL for errors and try again, or go back to the homepage.",
+    "back-to-home-button": "RETURN TO HOMEPAGE TO CONTINUE EXPLORING",
+    "server-error-title": "Server Configuration Issue | 505",
+    "server-error-description": "The server encountered an internal error or misconfiguration and was unable to complete your request. This might be due to an issue with the server's configuration settings.",
+    "payment-error-title": "Payment Required to Access Content | 402",
+    "payment-error-description": "You are trying to access a resource that requires payment. Please make sure you have the necessary payment credentials or contact support for assistance."
 }

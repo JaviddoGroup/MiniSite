@@ -33,5 +33,12 @@
     "branch-description": "İu şəhərində yerləşən Çin filialımıza xoş gəlmisiniz! Burada işinizin peşəkarı ilə tanış olacaqsınız məhsul və texnologiyamızda sizə ən qabaqcıl həllər təqdim etməyə hazır olan komanda. The sərgi salonumuzda məhsullarımızın geniş çeşidi ilə tanış ola, qiymətləndirə bilərsiniz keyfiyyət və innovativ istehsal üsulları haqqında daha çox məlumat əldə edin. Mütəxəssislərimiz məmnun olacaqlar biznes məqsədlərinizə cavab verən əməkdaşlıq imkanları haqqında ətraflı məlumat verin. Sizi filialımızı ziyarət etməyə və məhsullarımız haqqında anlayışınızı dərinləşdirməyə və yolları müzakirə etməyə dəvət edirik məqsədlərinizə çatmaq üçün effektiv qarşılıqlı əlaqə.",
     "html-title": "Javiddo Group | Çin Filialı",
     "page-news": "Xəbərlər",
-    "page-blogs": "Bloglar"
+    "page-blogs": "Bloglar",
+    "not-found-title": "Ups! Səhifə tapılmadı | 404",
+    "not-found-description": "Üzr istəyirik, ancaq axtardığınız səhifə tapılmadı. Onun adı dəyişdirilib, ya silinmişdir, ya da müvəqqəti olaraq əlçatan deyil. URL-dəki səhvə yoxlayın və yenidən cəhd edin, ya ana səhifəyə qayıdın.",
+    "back-to-home-button": "DƏVAM ETMƏK ÜÇÜN ANA SƏHİFƏYƏ QAYITIN",
+    "server-error-title": "Server Konfiqurasiya Problemaları | 505",
+    "server-error-description": "Server daxili xəta və ya yanlış konfiqurasiya ilə üzləşdi və sorğunu yerinə yetirə bilmədi. Bu, serverin konfiqurasiya ayarlarında problem olmasından kaynaklanabilir.",
+    "payment-error-title": "Məzmunu əldə etmək üçün ödəniş tələb olunur | 402",
+    "payment-error-description": "Siz ödəniş tələb edən bir resursa giriş cəhd edirsiniz. Zəhmət olmasa, lazımi ödəniş məlumatlarına malik olduğunuzdan əmin olun və yardım üçün dəstəyə müraciət edin."
 }

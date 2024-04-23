@@ -27,5 +27,12 @@
     "branch-in-china-title": "ÇIN BAŞ OFISI",
     "branch-in-china-description": "Javiddo Group-un baş ofisi Yivu şəhərində yerləşir. Beynəlxalq ticarət və kommersial əməliyyatlarının döyünən ürəyi sayılan şəhərdə idarəetmə, tədqiqat və istehsal fəaliyyətlərimiz həyata keçirilir. Çindəki üstün logistika imkanlarımız həm e-ticarəti, həm də qlobal miqyasda həyata keçirilən digər ticarət növlərini emal edir.",
     "branch-in-azerbaijan-title": "AZƏRBAYCAN FILIALI",
-    "branch-in-azerbaijan-description": "Azərbaycandakı rəsmi nümayəndəliyimiz “Javiddo Group” brendlərinin marketinq məsələləri üçün kreativ həlləri nəzərdən keçirir, reallaşdırır və ölkədaxili korporativ satış prosedurlarını həyata keçirir. Eyni zamanda, bu nümayəndəlik MDB və digər yaxın ölkələrlə əməkdaşlıq zamanı böyük üstünlük yaradır."
+    "branch-in-azerbaijan-description": "Azərbaycandakı rəsmi nümayəndəliyimiz “Javiddo Group” brendlərinin marketinq məsələləri üçün kreativ həlləri nəzərdən keçirir, reallaşdırır və ölkədaxili korporativ satış prosedurlarını həyata keçirir. Eyni zamanda, bu nümayəndəlik MDB və digər yaxın ölkələrlə əməkdaşlıq zamanı böyük üstünlük yaradır.",
+    "not-found-title": "Ups! Səhifə tapılmadı | 404",
+    "not-found-description": "Üzr istəyirik, ancaq axtardığınız səhifə tapılmadı. Onun adı dəyişdirilib, ya silinmişdir, ya da müvəqqəti olaraq əlçatan deyil. URL-dəki səhvə yoxlayın və yenidən cəhd edin, ya ana səhifəyə qayıdın.",
+    "back-to-home-button": "DƏVAM ETMƏK ÜÇÜN ANA SƏHİFƏYƏ QAYITIN",
+    "server-error-title": "Server Konfiqurasiya Problemaları | 505",
+    "server-error-description": "Server daxili xəta və ya yanlış konfiqurasiya ilə üzləşdi və sorğunu yerinə yetirə bilmədi. Bu, serverin konfiqurasiya ayarlarında problem olmasından kaynaklanabilir.",
+    "payment-error-title": "Məzmunu əldə etmək üçün ödəniş tələb olunur | 402",
+    "payment-error-description": "Siz ödəniş tələb edən bir resursa giriş cəhd edirsiniz. Zəhmət olmasa, lazımi ödəniş məlumatlarına malik olduğunuzdan əmin olun və yardım üçün dəstəyə müraciət edin."
 }

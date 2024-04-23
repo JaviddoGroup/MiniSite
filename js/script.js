@@ -142,3 +142,4 @@ window.addEventListener('keydown', function (event) {
         // Здесь можно предпринять дополнительные действия
     }
 });
+
