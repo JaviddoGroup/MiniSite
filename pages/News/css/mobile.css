@@ -160,8 +160,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 20%;
         z-index: 2;
         background-color: white;
@@ -672,6 +672,10 @@
 }
 
 @media screen and (max-width: 2000px) {
+    .video-frame {
+        width: 100%;
+        height: 490px;
+    }
 
     .active-filter .grid-item {
         display: none;
@@ -834,8 +838,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 5%;
         left: 20%;
         z-index: 2;
         background-color: white;
@@ -1464,8 +1468,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 17%;
         z-index: 2;
         background-color: white;
@@ -2096,8 +2100,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 20%;
         z-index: 2;
         background-color: white;
@@ -2734,13 +2738,13 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 12%;
         z-index: 2;
         background-color: white;
         width: 75%;
-        height: 70vh;
+        height: 80vh;
         border-radius: 10px;
     }
 
@@ -3371,8 +3375,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 12%;
         z-index: 2;
         background-color: white;
@@ -4003,13 +4007,13 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 0%;
+        position: fixed;
+        top: 15%;
         left: 21%;
         z-index: 2;
         background-color: white;
         width: 55%;
-        height: 74vh;
+        height: 76vh;
         border-radius: 10px;
 
     }
@@ -4244,8 +4248,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 0%;
+        position: fixed;
+        top: 15%;
         left: 17%;
         z-index: 2;
         background-color: white;
@@ -4883,8 +4887,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 0%;
+        position: fixed;
+        top: 15%;
         left: 14%;
         z-index: 2;
         background-color: white;
@@ -5525,8 +5529,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 0%;
+        position: fixed;
+        top: 15%;
         left: 14%;
         z-index: 2;
         background-color: white;
@@ -6168,8 +6172,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: -3%;
+        position: fixed;
+        top: 15%;
         left: 28%;
         z-index: 2;
         background-color: white;
@@ -6826,7 +6830,7 @@
         padding: 10px;
         border-radius: 5px;
         z-index: 3;
-        width: 10%;
+        width: fit-content;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -6854,8 +6858,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: -3%;
+        position: fixed;
+        top: 15%;
         left: 5%;
         z-index: 2;
         background-color: white;
@@ -7522,7 +7526,7 @@
         padding: 10px;
         border-radius: 5px;
         z-index: 3;
-        width: 10%;
+        width: fit-content;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -7550,8 +7554,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: 2%;
+        position: fixed;
+        top: 15%;
         left: 5%;
         z-index: 2;
         background-color: white;
@@ -8219,7 +8223,7 @@
         padding: 10px;
         border-radius: 5px;
         z-index: 3;
-        width: 10%;
+        width: fit-content;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -8247,8 +8251,8 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: -1%;
+        position: fixed;
+        top: 15%;
         left: 5%;
         z-index: 2;
         background-color: white;
@@ -8917,7 +8921,7 @@
         padding: 10px;
         border-radius: 5px;
         z-index: 3;
-        width: 10%;
+        width: fit-content;
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
@@ -8945,13 +8949,13 @@
     }
 
     .pop-up-active {
-        position: absolute;
-        top: -1%;
+        position: fixed;
+        top: 15%;
         left: 5%;
         z-index: 2;
         background-color: white;
         width: 90%;
-        height: 53vh;
+        height: 58vh;
         border-radius: 10px;
 
 
